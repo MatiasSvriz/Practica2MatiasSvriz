@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3450af837aca79429e4d29c89c5cde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonController
-  movementSpeed: 7
+  movementSpeed: 9
   jumpHeight: 2
   gravityScale: -9.81
   feet: {fileID: 5720602390438899032}

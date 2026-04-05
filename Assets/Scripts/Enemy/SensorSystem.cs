@@ -14,21 +14,18 @@ public class SensorSystem : MonoBehaviour
     {
         
     }
-    
-    private void Update()
-    {
-        Debug.Log("Enemy Update funcionando");
-    }
 
     private void FixedUpdate()
     { 
-        SearchingTarget();
+        //SearchingTarget();
     }
 
     public GameObject SearchingTarget()
     {
         Collider[] results = Physics.OverlapSphere(transform.position, SensorRadius, whatIsTarget);
-
+        
+        Debug.Log("Targets en radio: " + results.Length);
+        
         // 1. Mira a ver si hay objetivo en la zona
         if(results.Length > 0) // Al menos hay un objetivo cerca de mi zona
         {
@@ -41,7 +38,7 @@ public class SensorSystem : MonoBehaviour
                 if (!Physics.Raycast(transform.position, directionToTarget,
                         directionToTarget.magnitude, whatIsObstacle))
                 {
-                    // Debug.Log("He visto a " + results[0].name);
+                    Debug.Log("Enemy ha visto a " + results[0].name);
                     return results[0].gameObject;
                 }
 
