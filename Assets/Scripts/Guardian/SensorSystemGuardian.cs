@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SensorSystemGuardian : MonoBehaviour
@@ -7,21 +8,11 @@ public class SensorSystemGuardian : MonoBehaviour
     [SerializeField] private LayerMask whatIsTarget;
     [SerializeField] private LayerMask whatIsObstacle;
     
-    void Start()
-    {
-        
-    }
-
-    private void FixedUpdate()
-    { 
-        //SearchingTarget();
-    }
-    
-    public GameObject SearchingTarget()
+    public GameObject SearchingTargetGuardian()
     {
         Collider[] results = Physics.OverlapSphere(transform.position, SensorRadius, whatIsTarget);
         
-        Debug.Log("Targets en radio: " + results.Length);
+        Debug.Log("Targets en radio de guardián: " + results.Length);
         
         // 1. Mira a ver si hay objetivo en la zona
         if(results.Length > 0) // Al menos hay un objetivo cerca de mi zona

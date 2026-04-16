@@ -15,6 +15,12 @@ public partial class SearchingTargetAction : Action
     protected override Status OnUpdate()
     {
         
+        if (Self.Value == null)
+        {
+            Debug.LogError("Self.Value es null. No está asignado el SensorSystem en el Blackboard.");
+            return Status.Failure;
+        }
+        
         GameObject possibleTarget = Self.Value.SearchingTarget();
         
         if (Target.Value == null && possibleTarget != null)

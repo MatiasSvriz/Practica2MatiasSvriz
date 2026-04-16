@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Graph: {fileID: -7091493343167552532, guid: d20d22df125f4d84992a81f59796aca9, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 198986393590694116
-  - rid: 198986397910302854
+  - rid: 198986692279926853
   m_OriginalGraph: {fileID: -7091493343167552532, guid: d20d22df125f4d84992a81f59796aca9, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 1639648583062256305}
-    - rid: 198986397910302854
+    - rid: 198986692279926853
       type: {class: 'BlackboardVariable`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -480,7 +480,6 @@ MonoBehaviour:
           m_Value1: 6407818348612351408
         Name: Waypoints
         m_Value:
-        - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
@@ -2271,7 +2270,7 @@ GameObject:
   - component: {fileID: 2420441107297529409}
   m_Layer: 6
   m_Name: EnemyVisual
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -8,17 +8,6 @@ public class SensorSystem : MonoBehaviour
     [field: SerializeField] public float SensorAngle { get; private set; } // 90º
     [SerializeField] private LayerMask whatIsTarget;
     [SerializeField] private LayerMask whatIsObstacle;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    private void FixedUpdate()
-    { 
-        //SearchingTarget();
-    }
 
     public GameObject SearchingTarget()
     {
