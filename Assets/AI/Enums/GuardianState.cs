@@ -5,6 +5,5 @@ using Unity.Behavior;
 public enum GuardianState
 {
 	FollowPlayer,
-	ProtectPlayer,
-	InvestigateThreat
+	ProtectPlayer
 }

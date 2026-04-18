@@ -36,7 +36,6 @@ public partial class SearchingTargetAction : Action
                 // Comunico al arbol la última posicion conocida del objetivo
                 LastKnownPosition.Value = Target.Value.transform.position;
                 Target.Value = null;
-                return Status.Failure;
             }
         }
         

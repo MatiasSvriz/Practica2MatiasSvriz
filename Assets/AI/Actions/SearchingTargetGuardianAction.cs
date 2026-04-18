@@ -32,7 +32,6 @@ public partial class SearchingTargetGuardianAction : Action
         {
             LastKnownPosition.Value = Target.Value.transform.position;
             Target.Value = null;
-            return Status.Failure;
         }
 
         return Status.Running;
