@@ -25,6 +25,7 @@ public partial class EnterChaseActionAction : Action
         }
 
         GameManager.Instance.SetDanger(Self.Value);
+        GameManager.Instance.RegisterInteraction();
 
         Debug.Log("SetDangerAction ejecutada por " + Self.Value.name);
 

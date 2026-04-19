@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 
     public bool IsDanger { get; private set; }
     public GameObject CurrentEnemy { get; private set; }
+    public int InteractionCount { get; private set; }
 
     private void Awake()
     {
@@ -23,4 +24,16 @@ public class GameManager : MonoBehaviour
         IsDanger = false;
         CurrentEnemy = null;
     }
+    
+    public void RegisterInteraction()
+    {
+        InteractionCount++;
+        Debug.Log("Interacciones con el enemigo: " + InteractionCount);
+
+        if (UIManager.Instance != null)
+        {
+            UIManager.Instance.UpdateInteractionText(InteractionCount);
+        }
+    }
+    
 }
