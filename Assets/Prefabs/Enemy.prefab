@@ -458,6 +458,7 @@ MonoBehaviour:
   m_BlackboardVariableOverridesList:
   - rid: 198986393590694116
   - rid: 198986692279926853
+  - rid: 198986756753719753
   m_OriginalGraph: {fileID: -7091493343167552532, guid: d20d22df125f4d84992a81f59796aca9, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -496,6 +497,19 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
+    - rid: 198986756753719753
+      type: {class: 'BlackboardVariable`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 2460085781181942911
+          m_Value1: 7281914910978679710
+        Name: InvestigatePoints
+        m_Value:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
 --- !u!114 &3305123204631001166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,7 +526,7 @@ MonoBehaviour:
   <SensorAngle>k__BackingField: 90
   whatIsTarget:
     serializedVersion: 2
-    m_Bits: 136
+    m_Bits: 8
   whatIsObstacle:
     serializedVersion: 2
     m_Bits: 55
@@ -557,6 +571,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3600099850484551512}
+  - component: {fileID: 30928140980696038}
+  - component: {fileID: 7016413619727101149}
   m_Layer: 6
   m_Name: mixamorig:Hips
   m_TagString: Untagged
@@ -582,6 +598,54 @@ Transform:
   - {fileID: 6768132109849753308}
   m_Father: {fileID: 9136823032495849404}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &30928140980696038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709150860409040035}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7016413619727101149
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709150860409040035}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1792704267780870865
 GameObject:
   m_ObjectHideFlags: 0
