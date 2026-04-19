@@ -25,7 +25,7 @@ public partial class CalculateFleePointAction : Action
         // Dirección contraria a donde mira
         Vector3 fleeDir = -Self.Value.transform.forward;
 
-        // Opcional: mantenerlo plano
+        // Mantener plano
         fleeDir.y = 0f;
         fleeDir.Normalize();
 
