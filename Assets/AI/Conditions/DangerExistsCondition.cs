@@ -3,13 +3,22 @@ using Unity.Behavior;
 using UnityEngine;
 
 [Serializable, Unity.Properties.GeneratePropertyBag]
-[Condition(name: "DangerExistsCondition", story: "[Danger] is true", category: "Conditions", id: "837302a7287075c243c54a6be3eed87e")]
+[Condition(name: "DangerExistsCondition", story: "Global danger is true", category: "Conditions", id: "837302a7287075c243c54a6be3eed87e")]
 public partial class DangerExistsCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<bool> Danger;
-
     public override bool IsTrue()
     {
-        return Danger.Value;
+        if (GameManager.Instance == null)
+            return false;
+
+        return GameManager.Instance.IsDanger;
+    }
+
+    public override void OnStart()
+    {
+    }
+
+    public override void OnEnd()
+    {
     }
 }
